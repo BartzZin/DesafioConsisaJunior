@@ -76,7 +76,7 @@ begin
      end;
 end else
 begin
-     MessageBox(Handle, 'Condição de pagamento selecionada, simule a venda para lançar um novo pedido!', 'Fechamento de Venda', MB_OK);
+     MessageBox(Handle, 'CondiÃ§Ã£o de pagamento selecionada, simule a venda para lanÃ§ar um novo pedido!', 'Fechamento de Venda', MB_OK);
 end;
 end;
 
@@ -99,7 +99,7 @@ begin
      end;
 end else
 begin
- MessageBox(Handle, 'Verifique se existe pedido selecionado no grid, ou se foi selecionada uma condição de Acréscimo/Desconto', 'Geração de Pedido', MB_OK);
+ MessageBox(Handle, 'Verifique se existe pedido selecionado no grid, ou se foi selecionada uma condiÃ§Ã£o de AcrÃ©scimo/Desconto', 'GeraÃ§Ã£o de Pedido', MB_OK);
 end;
 end;
 
@@ -213,10 +213,10 @@ XMLDoc := TXMLDocument.Create(nil);
 XMLDoc.Active := True;
 
 
-// Adiciona um nó Raiz
+// Adiciona um nÃ³ Raiz
 RootNode := XMLDoc.AddChild('Venda');
 
-// Adiciona o nó de pedido
+// Adiciona o nÃ³ de pedido
 ItemNode := RootNode.AddChild('Pedido');
 
 // Adiciona os campos como elementos filhos
@@ -244,7 +244,7 @@ end;
 dm_Dados.dSetItemPedido.First;
 while not dm_Dados.dSetItemPedido.Eof do
 begin
-     // Adicionar um nó de item
+     // Adicionar um nÃ³ de item
      ItemNode := RootNode.AddChild('PedidoItem');
      // Adicionar os campos como elementos filhos
      ItemNode.AddChild('IDItem').Text := dm_Dados.dSetItemPedidoCD_ITEMPEDIDO.AsString;
@@ -266,10 +266,6 @@ end;
 //******************************************************************************
 procedure TForm_Pedidos.dbCondPagKeyPress(Sender: TObject; var Key: Char);
 begin
-  if Key = 'E' then
-  begin
-    ShowMessage('Tecla E pressionada!');
-  end;
 end;
 
 //******************************************************************************
