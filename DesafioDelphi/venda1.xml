@@ -1,1 +1,0 @@
-<Venda><Pedido><ID_Pedido>1</ID_Pedido><Cliente>TESTE</Cliente><Endereco>TESTE</Endereco><Cidade>TESTE</Cidade><UF>PR</UF><TotalBruto>9</TotalBruto><Desconto>10</Desconto><TotalLiquido>8,1</TotalLiquido></Pedido><PedidoItem><IDItem>1</IDItem><Produto>TESTE</Produto><Quantidade>5</Quantidade><ValorUnitario>5</ValorUnitario><ValorTotal>25</ValorTotal></PedidoItem></Venda>
